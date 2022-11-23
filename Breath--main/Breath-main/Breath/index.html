@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breath</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="scroll-animate">
+        <div id="scroll-animate-main">
+          <div class="wrapper-parallax">
+
+    <div id="top" class="container">
+  
+        <div class="fixed">
+          
+          <div class="bg transition"></div>
+          
+    <section>
+        <div class="circle"></div> 
+        <header>
+            <a href="#"><img src="img/mundo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navegacao">
+                <li><a href="#"><button class="custom-btn btn-8"><span>Home</span></button></a></li>
+                <li><a href="#"><button class="custom-btn btn-8"><span>Menu</span></button></a></li>
+                <li><a href="#"><button class="custom-btn btn-8"><span>Chat</span></button></a></li>    
+                <li><a href="#"><button class="custom-btn btn-8"><span>Alimentação</span></button></button></a></li>          
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Apenas<br><span>Respire.</span></h2>
+                <p>
+                    Os transtornos alimentares (TA) são doenças de caráter mental, em que há uma perturbação no comportamento relacionado à alimentação,
+                     comprometendo a saúde física e psicossocial do indivíduo, podendo acometer crianças, adolescentes e adultos.
+                     <BR></BR>
+                     </p>
+                     <div id="leiamais">
+                        <p>Por serem doenças graves com altos índices de mortalidade, os pacientes devem ser tratados e acompanhados por uma equipe de multiprofissionais, que inclui médicos, psicólogos, enfermeiros e nutricionistas para traçar um melhor planejamento e ter um melhor desfecho clínico.</p>
+
+                        <a href="" onclick="leiaMenos()"><p>Ocultar</p></a>
+                     </div>
+                    <button onclick="leiaMais()" id="vermaisbtn">Leia mais</button>
+            </div>
+             <div  class="imgBox">
+            <img src="img/world_resized.png" class="saude">
+             </div>       
+
+         <script type="text/javascript">
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                menuToggle.classList.toggle('active')
+                var navegacao = document.querySelector('.navegacao')
+                navegacao.classList.toggle('active')
+            }
+         </script>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
